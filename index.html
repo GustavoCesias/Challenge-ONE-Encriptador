@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRUEBA</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <img class="logo" src="imagenes/Logo.png" alt="">
+      <h1 class="titulo">ENCRIPTADOR DE ALURA</h1>
+    </nav>
+    
+ </header>
+ <main>
+  <section class="caja1">
+    <div>
+      <textarea class="textArea" placeholder="Ingrese el texto aqui" oninput="actualizarContenido()" ></textarea>
+    </div>
+    <div class="botones-texArea">
+      <button onclick="obtenerTextoOriginal()" class="boton-encriptar"><p>Encriptar</p></button>
+      <button  onclick="desencriptarTexto()" class="boton-desencriptar"><p>Desencriptar</p></button>
+      
+    </div>
+  </section>
+  <section class="caja2">
+    <div cajatextoencriptado>
+      <textarea class="textArea2" readonly></textarea>
+      <div>
+        <button onclick="copiarTextoEncriptado()" class="boton-copiar"><p>Copiar</p></button>
+      </div>
+    </div>
+    
+  </section>
+  <section class="caja3">
+	  <div class="texto-delantero">
+      <img src="imagenes/Muñeco.png" alt="">
+      <p>Ningún mensaje fue encontrado</p>
+      <br>
+      <br>
+      <p>Ingresa el texto que deses encriptar o desencriptar</p>
+    </div>
+
+  </section>
+ </main>
+ <footer>
+  <h2>Pagina desarrollada por Gustavo Cesias Cruzado</h2>
+  <a href="https://www.linkedin.com/in/gustavo-daniel-cesias-cruzado/" target="_blank"><img src="imagenes/linkedin.png" class="logoLinkedin"></a>
+  <a href="https://twitter.com/Gcesi23" target="_blank"><img src="imagenes/gorjeo.png" class="logoTwitter"></a>
+  <a href="https://github.com/GustavoCesias" target="_blank"><img src="imagenes/github.png" class="logoGithub"></a>
+ </footer>
+
+ <script src="main.js"></script>
+</body>
+</html>
